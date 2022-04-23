@@ -31,6 +31,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 
+
+# ICO
+RC_ICONS = NewWorld.ico
+
 # RESOURCES
 RESOURCES += QDarkStyleSheet/qdarkstyle/dark/style.qrc
 RESOURCES += QDarkStyleSheet/qdarkstyle/light/style.qrc
