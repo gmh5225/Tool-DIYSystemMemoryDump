@@ -15,6 +15,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_start_clicked();
+
+    void on_pushButton_stop_clicked();
+
+public:
+    enum DUMPTYPE { AUTO = 7, KERNEL = 2, SMALL = 3, COMPLETE = 1 };
+
+public:
+    DUMPTYPE mDumpType;
+    bool mStop;
+    bool mRunning;
+
 private:
     Ui::MainWindow *ui;
 };
