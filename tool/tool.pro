@@ -36,3 +36,5 @@ RESOURCES += QDarkStyleSheet/qdarkstyle/dark/style.qrc
 RESOURCES += QDarkStyleSheet/qdarkstyle/light/style.qrc
 RESOURCES += QDarkStyleSheet/qdarkstyle/X64DBGDark/style.qrc
 
+#UAC
+QMAKE_LFLAGS_WINDOWS += /MANIFESTUAC:"level='requireAdministrator'"
